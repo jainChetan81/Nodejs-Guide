@@ -8,15 +8,8 @@ app.config = {
 //ajax client for restful api
 app.client = {};
 //interface for making api callsprettier-ignore
-
-app.client.request = (
-    headers,
-    path,
-    method,
-    queryStringObject,
-    payload,
-    callback
-) => {
+//prettier-ignore
+app.client.request = (headers,path,method,queryStringObject,payload,callback) => {
     //set defaults
     headers = typeof headers == "object" && headers !== null ? headers : {};
     path = typeof path == "string" ? path : "/";
