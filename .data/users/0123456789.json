@@ -1,1 +1,8 @@
-{"firstName":"John","lastName":"Doe","phone":"0123456789","hashedPassword":"f3179b5fe9f48997e575380f1aae2e0b83fc678b4ce0609a918f9a6c6e7267d8","tosAgreement":true,"checks":["krmpfb15dfvjpisscz65","ixbnq63ltrqyoheifgso"]}
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "phone": "0123456789",
+    "hashedPassword": "f3179b5fe9f48997e575380f1aae2e0b83fc678b4ce0609a918f9a6c6e7267d8",
+    "tosAgreement": true,
+    "checks": ["krmpfb15dfvjpisscz65", "ixbnq63ltrqyoheifgso"]
+}
