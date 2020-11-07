@@ -1,2 +1,3 @@
 /.logs/*
 .data/checks/*
+/node_modules
