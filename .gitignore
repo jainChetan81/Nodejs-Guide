@@ -3,3 +3,5 @@
 /node_modules
 /https/cert.pem
 /https/key.pen
+https
+lib/config.js
