@@ -1,4 +1,7 @@
-//primary file for the api
+/*
+*primary file for the api
+
+*/
 
 //dependencies
 const server = require("./lib/server");
@@ -9,7 +12,7 @@ const cli = require("./lib/cli");
 const app = {};
 
 // init function
-app.init = () => {
+app.init = (callback) => {
     // start the server
     server.init();
 
@@ -19,11 +22,15 @@ app.init = () => {
     //start cli
     setTimeout(() => {
         cli.init();
+        callback();
     }, 50);
 };
 
-// execute
-app.init();
+//self invoke only if required directly
+if (require.main === module) {
+    // execute
+    app.init(() => {});
+}
 
 //export this
 module.exports = app;
